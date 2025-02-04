@@ -85,7 +85,7 @@ class PatternRecognition:
 if __name__ == "__main__":
     pr = PatternRecognition()
     filename = "sample.txt"
-    search_key = "teste"
+    search_key = "jaga"
     result = pr.search_in_file(filename, search_key)
     if result:
         print(f"Chave '{search_key}' encontrada {result['occurrences']} vezes")
