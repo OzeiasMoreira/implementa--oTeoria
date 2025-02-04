@@ -2,7 +2,9 @@ Estrutura do Código
 1. FSM Class
 A classe FSM implementa a máquina de estados finitos. Ela possui:
 
-Estados: Cada estado é representado como uma chave em um dicionário.
+Estados: 
+
+Cada estado é representado como uma chave em um dicionário.
 Transições: Transições entre estados são definidas para cada caractere.
 Estado de aceitação: O estado final onde a máquina aceita a entrada.
 Trap state: Um estado para transições inválidas, garantindo que caracteres não esperados sejam tratados adequadamente.
@@ -16,7 +18,8 @@ search_in_file: Realiza a busca pela chave no arquivo de texto, conta as ocorrê
 3. Execução Principal
 No bloco if __name__ == "__main__":, o código chama o método search_in_file com o nome de um arquivo e a chave de pesquisa desejada, exibindo os resultados da busca.
 
-Como Usar
+Como Usar:
+
 Prepare o arquivo de texto: Crie um arquivo de texto chamado sample.txt (ou altere o nome do arquivo no código) contendo o texto onde você deseja realizar a busca.
 Defina a chave de pesquisa: No código, defina a variável search_key com a chave que você deseja procurar.
 Execute o código: Execute o script Python. Ele realizará a busca no arquivo e exibirá o número de ocorrências e o tempo de execução.
@@ -31,7 +34,8 @@ Tempo de execução: 45.23 ms
 Dependências
 Este código não possui dependências externas além do Python 3.x.
 
-Como Funciona
+Como Funciona:
+
 Criação da FSM: Para cada caractere da chave de pesquisa, o código cria uma FSM que verifica se o caractere está presente nas palavras do arquivo.
 Busca no Arquivo: Para cada linha no arquivo, o código divide a linha em palavras e verifica cada uma delas em busca da chave de pesquisa utilizando a FSM.
 Contagem e Resultados: A cada vez que a chave é encontrada, a contagem é incrementada e o tempo de execução é calculado.
